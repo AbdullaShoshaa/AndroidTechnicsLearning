@@ -31,4 +31,3 @@
         android:onClick="fade2"
         android:visibility="gone"/>
 </RelativeLayout>
-    
