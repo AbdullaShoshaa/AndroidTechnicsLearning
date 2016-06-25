@@ -3,8 +3,6 @@ package com.fedaros.www.animation;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,25 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    public void rotate(View view){
-
-        this.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                //int counter = 0;
-                //bart.animate().rotation(counter+=50).setDuration(500);
-                //create animation object and pass the required arguments.
-                Animation animation = new RotateAnimation(360, 0);
-                animation.setRepeatCount(Animation.INFINITE);
-                animation.setDuration(1000);
-                //set the animation object reference to imageView and start the animation effect.
-                bart.startAnimation(animation);
-
-            }
-        });
-
-
+    //a method used to performe multiple animations effects beside scaling.
+    public void scale(View view){
+        //scale bart by half and translate him and lower the opacity.
+        bart.animate().scaleX(0.5f).scaleY(0.5f)
+                .translationX(-300).translationY(-300).alpha(0.8f).setDuration(2000);
     }
-
 }

@@ -17,6 +17,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/bart"
-        android:onClick="rotate" />
+        android:onClick="scale" />
 
 </RelativeLayout>
