@@ -17,17 +17,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/bart"
-        android:onClick="fade" />
+        android:onClick="translate" />
 
-    <ImageView
-        android:src="@drawable/homer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/homer"
-        android:alpha="0"
-        android:onClick="fade2"
-        android:visibility="gone"/>
 </RelativeLayout>
